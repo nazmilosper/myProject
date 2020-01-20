@@ -1,0 +1,81 @@
+<section class="column_12"> 
+	<div class="grid_2">
+		<div class="card">
+	  		<img src="Images/accessory-briefcase-buckle.jpg" alt="bags">
+	  		<h1>Bags</h1>
+	  		<p>Bags for all occasions including Travel bags, Shopping bags and Fashion bags.</p>
+	  		<p><button>View More..</button></p>
+		</div>
+	</div>
+	<div class="grid_2">
+		<div class="card">
+	  		<img src="Images/bath-towels-bed-close-up.jpg" alt="towels">
+	  		<h1>Towels</h1>
+	  		<p>Bags for all occasions including Travel bags, Shopping bags and Fashion bags.</p>
+	  		<p><button>View More..</button></p>
+		</div>
+	</div>
+</section>
+
+
+/*.column{
+	float:left;
+	width: 49%;
+	padding: 0 10px;
+}
+
+.column img{
+	height: 300px;
+}*/
+
+
+.card{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+	background-color: #FF1493;
+	margin: 5px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card button:hover {
+  opacity: 0.7;
+}
+
+/*.card1{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+	background-color: #FF1493;
+	margin: 5px;
+}
+
+.card1 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card1 button:hover {
+  opacity: 0.7;
+}
+*/

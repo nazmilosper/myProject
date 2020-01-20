@@ -1,0 +1,426 @@
+body{
+	width: 100%;
+	font-family: Arial, Courier, sans-serif;
+	margin: 0px;
+	padding: 0;
+	background-color: azure;
+}
+
+body .about{
+	background-color: azure;
+}
+
+
+/************************************Reactive NavBar*****************************************/
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0 50px;
+	background: #262626;
+	opacity: 0.9;
+	width: 100%;
+	box-sizing: border-box;
+	/*margin-bottom: 1px;*/
+}
+header .logo a{
+	float: left;
+	line-height: 50px;
+	color:#FF1493;
+	border:3px double #FF1493;
+	height: 50px;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 20px;
+	padding: 0 10px;
+}
+header .logo a:hover{
+	color:white;
+}
+
+header nav{
+	float: right;
+}
+header nav ul{
+	margin:0;
+	padding: 0;
+	display: flex;
+}
+header nav ul li{
+	list-style: none;
+}
+header nav ul li a{
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	color: #fff;
+	text-decoration: none;
+	/*justify-content: center;
+	text-align: center;*/
+	display: block;
+	border-left: 1px solid #FF1493;
+}
+header nav ul li a:hover
+/*header nav ul li a.active*/
+{
+	background: #FF1493
+}
+
+.menu-toggle{
+	color:#fff;
+	float: right;
+	line-height: 50px;
+	font-size:24px;
+	cursor: pointer;
+	display: none;
+}
+@media (max-width: 980px){
+	header
+	{
+		padding: 0 20px;
+	}
+	.menu-toggle
+	{
+		display: block;
+	}
+	header nav
+	{
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background: #000;
+		top: 50px;
+		left:-100%;
+		transition: 0.5s;
+	}
+	header nav.active
+	{
+		left: 0;
+		float:left;
+	}
+	header nav ul
+	{
+		display: block;
+		text-align: center;
+	}
+	header nav ul li a
+	{
+		border-bottom: 1px solid rgb(199,21,133);
+	}
+	section .hero{
+		clear: left;
+		align-items: left;
+		display: absolute;
+	}
+}
+
+/************************************Reactive NavBar end*****************************************/
+
+/************************************Hero Image Start*****************************************/
+.hero{
+	color: white;
+	width: 100%;
+	height: 520px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(../Images/GirlPortrait.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	/*margin-top:1px;*/
+}
+.hero h1{
+	font-family: serif, sans-serif;
+	font-size: 3em;
+	margin-bottom: 0px;
+}
+.hero h2{
+	font-family: serif, sans-serif;
+	font-style: italic;
+}
+
+.hero-inner .btn{
+	flex:1 1 auto;
+	transition: 0.5s;
+	display: block;
+	width: 200px;
+	border: 3px solid black;
+	border-radius: 50px;
+	background-color: #FF1493;
+	padding: 10px;
+	margin: 30px auto 5px auto;
+	color: #fff;
+	text-decoration: none;
+	font-size: 25px;
+	margin-top: 50px;
+	/*background-image: linear-gradient(to right, #FF1493 0%, coral 51%, #ff6e7f 100%)*/
+}
+.hero-inner .btn:hover{
+	color: #000;
+	background-color: lightblue;
+	/*background-position: right center;*/
+	/*background-image: linear-gradient(to left, #FF1493 25%, #bfe9ff 75%, #ff6e7f 100%);*/
+}
+
+#greeting{
+	font-size: 20px;
+}
+
+/***********************************End of Hero Image******************************************/
+
+/************************************About Hero Image Start*****************************************/
+.aboutHero{
+	color: azure;
+	width: 100%;
+	height: 420px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url(../Images/adults-black-and-white-casual.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	/*margin-top:1px;*/
+}
+.aboutHero h1{
+	font-family: arial,serif, sans-serif;
+	font-size: 44px;
+	margin-bottom: 0px;
+	border: 5px double aqua;
+}
+
+#greeting{
+	font-size: 20px;
+}
+
+/***********************************About End of Hero Image******************************************/
+
+/***********************************Products Columns******************************************/
+#products{
+	overflow: auto;
+}
+.column1, .column2, .column3{
+	width: 33%;
+	float:left;
+	margin-top: 0.5%
+}
+.column1{
+	background-image: url(../Images/accessory-briefcase-buckle.jpg);
+	height:400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin-right: 0.3%
+}
+.column2{
+	background-image: url(../Images/bath-towels-bed-close-up.jpg);
+	height:400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin-right: 0.3%
+}
+.column3{
+	background-image: url(../Images/bed-bedroom-comfort.jpg);
+	height:400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin-right: 0.3%
+}
+#products .btn{
+	flex:1 1 auto;
+	transition: 0.5s;
+	display: block;
+	width: 120px;
+	border: 3px solid black;
+	border-radius: 50px;
+	background-color: lightblue;
+	padding: 10px;
+	margin: 30px auto 5px auto;
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
+	margin-top: 340px;
+	text-align: center;
+}
+#products .btn:hover{
+	color: #fff;
+	background-color: #FF1493;
+}
+
+/***********************************Product Columns End******************************************/
+
+/************************************Hero Image1 Start*****************************************/
+.hero1{
+	width: 100%;
+	height: 25em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url(../Images/adults-black-and-white-casual.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	margin-top:0.5%;
+}
+
+.hero1 h2{
+	height: 300px;
+	width: 400px;
+	font-family: serif, sans-serif;
+	font-style: italic;
+	color: white;
+	margin: 50px auto 0 auto;
+}
+
+.hero1 .btn{
+	flex:1 1 auto;
+	transition: 0.5s;
+	display: block;
+	width: 200px;
+	border: 3px solid black;
+	border-radius: 50px;
+	background-color: #FF1493;
+	padding: 10px;
+	margin: 0 auto 50px auto;
+	color: #fff;
+	text-decoration: none;
+	font-size: 25px;
+	/*background-image: linear-gradient(to right, #FF1493 0%, coral 51%, #ff6e7f 100%)*/
+}
+.hero-inner1 .btn:hover{
+	color: #000;
+	background-color: lightblue;
+	/*background-position: right center;*/
+	/*background-image: linear-gradient(to left, #FF1493 25%, #bfe9ff 75%, #ff6e7f 100%);*/
+}
+
+/***********************************End of Hero Image1******************************************/
+
+
+/*footer{
+	clear: both;
+}*/
+
+.footer{
+	background-color: black;
+	height: 180px;
+	margin-top: 0.5%;
+	margin-bottom: 0;
+}
+.footer .copy{
+	color:white;
+	text-align: center;
+	margin: 20px 20px;
+}
+.footer .socials{
+	text-align: right;
+	padding-right: 10px;
+	display: block;
+}
+.footer .fa{
+	text-align: center;
+	font-size: 30px;
+	width: 30px;
+	text-decoration: none;
+	border-radius: 50%;
+	padding: 10px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin: 20px 20px;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  margin: 20px 20px;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  margin: 20px 20px;
+}
+
+/***********************************End of Footer******************************************/
+
+/***********************************Start To Top button******************************************/
+
+#myBtn{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: aqua; /* Add a dark-grey background on hover */
+  color: black;
+}
+
+/***********************************End To Top button******************************************/
+
+/***********************************About To Top button****************************************/
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: red;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: aqua;
+    color: #000;
+}
+
+/***********************************End About To Top button************************************/
+
+/***********************************About Us Message*******************************************/
+.about p{
+	color: black;
+	height: 300px;
+	width: 50%;
+	font-family: serif, sans-serif, helvetica;
+	font-size: 18px;
+	/* font-style: italic; */
+	margin: 50px auto 50px auto;
+}
+
+/***********************************About Us Message End*******************************************/

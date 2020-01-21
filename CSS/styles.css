@@ -460,8 +460,16 @@ footer{
 	margin: 0;
 }
  
-.footer-distributed h3 span{
+.footer-distributed h3 span a{
 	color:  #FF1493;
+	text-decoration: none;
+	border:3px double #FF1493;
+	padding: 6px 12px;
+}
+
+.footer-distributed h3 span a:hover{
+	color:white;
+	border:3px double #55ACEE;
 }
  
  
@@ -476,6 +484,10 @@ footer{
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
+}
+
+.footer-distributed .footer-links a:hover{
+	color:  #55ACEE;
 }
  
 .footer-distributed .footer-company-name{

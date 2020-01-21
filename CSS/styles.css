@@ -38,6 +38,7 @@ header .logo a{
 }
 header .logo a:hover{
 	color:white;
+	border: 3px double #55ACEE;
 }
 
 header nav{
@@ -65,7 +66,8 @@ header nav ul li a{
 header nav ul li a:hover
 /*header nav ul li a.active*/
 {
-	background: #FF1493
+	background: #FF1493;
+	/* border-right: 3px solid #55ACEE; */
 }
 
 .menu-toggle{

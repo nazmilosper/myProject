@@ -15,6 +15,11 @@ body{
     padding-top:0px;
     position: auto;
 }
+
+#form-main p{
+    text-align: center;
+    font-size: 22px;
+}
   
 #form-div {
     background-color:rgba(72,72,72,0.4);
@@ -27,7 +32,7 @@ body{
       /* left: 50%; */
     position: center center;
     margin-top:30px;
-    margin-left: 30%;
+    margin-left: 35%;
     border-radius: 7px;
 }
   
@@ -152,6 +157,17 @@ body{
           padding-left: 3%;
           padding-right: 3%;
       }
+  }
+
+.footer-center1{
+    text-align: center;
+    display: block;
+    font: bold 16px sans-serif;
+	color: black;
+	font-size: 25px;
+	text-align: center;
+    margin: 10px 15px;
+    border-top: 3px double black;
   }
   
   

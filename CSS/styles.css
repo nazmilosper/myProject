@@ -451,7 +451,7 @@ header nav ul li a:hover
 	font-family: serif, sans-serif, helvetica;
 	font-size: 18px;
 	/* font-style: italic; */
-	margin: 50px auto 50px auto;
+	margin: 50px auto 20px auto;
 }
 
 /***********************************About Us Message End*******************************************/
@@ -567,7 +567,12 @@ footer{
  
 .footer-distributed .footer-center p a{
 	color:  #5383d3;
-	text-decoration: none;;
+	text-decoration: none;
+}
+
+.footer-distributed .footer-center p a:hover{
+	color:  white;
+	text-decoration: underline;
 }
  
 .footer-distributed .footer-right{

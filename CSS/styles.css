@@ -475,12 +475,22 @@ header nav ul li a:hover
 /***********************************About Us Message*******************************************/
 .about p{
 	color: black;
-	height: 300px;
+	height: 150px;
 	width: 50%;
 	font-family: serif, sans-serif, helvetica;
 	font-size: 18px;
 	/* font-style: italic; */
 	margin: 50px auto 20px auto;
+}
+
+.about p #changeText{
+	color: black;
+	height: 100px;
+	width: 50%;
+	font-family: serif, sans-serif, helvetica;
+	font-size: 18px;
+	/* font-style: italic; */
+	margin: 50px 20px 20px 20px;
 }
 
 /***********************************About Us Message End*******************************************/
@@ -698,8 +708,29 @@ footer{
 }
 /***********************************End New Footer Begin*******************************************/
 
-/*********************************** Contact Us Form **********************************************/
+/*********************************** Change text button on About page **********************************************/
+.about button{
+	flex:1 1 auto;
+	transition: 0.5s;
+	display: block;
+	width: auto;
+	border: 3px solid black;
+	border-radius: 50px;
+	background-color: black;
+	padding: 10px;
+	margin: 30px auto 5px auto;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	/* margin-top: 50px; */
+	/*background-image: linear-gradient(to right, #FF1493 0%, coral 51%, #ff6e7f 100%)*/
+}
+.about button:hover{
+	color: #000;
+	background-color: lightblue;
+	/*background-position: right center;*/
+	/*background-image: linear-gradient(to left, #FF1493 25%, #bfe9ff 75%, #ff6e7f 100%);*/
+}
 
 
-
-/*********************************** Contact Us Form End**********************************************/ 
+/*********************************** Change text button on About page End**********************************************/ 

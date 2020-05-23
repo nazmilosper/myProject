@@ -62,8 +62,11 @@ $(document).ready(function() {
 });
 /*Scroll to top when arrow up clicked END*/
 
-//************************************************ To Top Button start ****************************************************//
+//************************************************ To Top Button End ****************************************************//
 
 //************************************************ About change Text ****************************************************//
 
+function quoteOfDay(){
+  document.getElementById('changeText').innerHTML='“People Who Are Crazy Enough To Think They Can Change The World, Are The Ones Who Do.” – Rob Siltanen'
+}
 

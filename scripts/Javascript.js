@@ -1,20 +1,20 @@
 // const today = new Date();
-// const hourNow = today.getHours();
-// let name = 'Nazmi';
-// let greeting;  /* have to be let key word as the greeting below changes based on time */
+//  const hourNow = today.getHours();
+//  let name = 'Welcome to me site';
+//  let greeting;  /* have to be let key word as the greeting below changes based on time */
 
-// if (hourNow > 18) {
-//     greeting = 'Good evening'  + name + '!';
-// } else if (hourNow > 12) {
-//     greeting = 'Good afternoon ' + name + '!';
-// } else if (hourNow > 0) {
-//     greeting = 'Good morning ' + name + '!';
-// } else {
-//     greeting = 'Welcome ' + name + '!';
-// }
-// const el = document.getElementById('greeting');
-// el.textContent = greeting;
-/*document.write('<h3>' + greeting + '</h3>');*/
+//  if (hourNow > 18) {
+//      greeting = 'Good evening'  + name + '!';
+//  } else if (hourNow > 12) {
+//      greeting = 'Good afternoon ' + name + '!';
+//  } else if (hourNow > 0) {
+//      greeting = 'Good morning ' + name + '!';
+//  } else {
+//      greeting = 'Welcome ' + name + '!';
+//  }
+//  const el = document.getElementById('greeting');
+//  el.textContent = greeting;
+// document.write('<h3>' + greeting + '</h3>');
 
 //************************************************ Welcome Message Above **************************************************//
 

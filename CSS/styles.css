@@ -67,6 +67,7 @@ header nav ul li a:hover
 /*header nav ul li a.active*/
 {
 	background: #FF1493;
+	transform: scale(1.3);
 	/* border-right: 3px solid #55ACEE; */
 }
 

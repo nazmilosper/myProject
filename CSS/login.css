@@ -89,6 +89,10 @@ input {
 	width: 100%;
 }
 
+input:focus{
+	background-color: aliceblue;
+}
+
 .container {
 	background-color: #fff;
 	border-radius: 10px;
